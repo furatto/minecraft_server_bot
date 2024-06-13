@@ -1,11 +1,12 @@
 import discord
 from mcstatus import MinecraftServer
 import os
+import conf.config as cf
 
-TOKEN = "Token"
+TOKEN = cf.token
 
-MINECRAFT_SERVER_DOMAIN = "ServerDomain"
-MINECRAFT_SERVER_PORT = "Port"
+MINECRAFT_SERVER_DOMAIN = cf.domain
+MINECRAFT_SERVER_PORT = cf.port
 
 # Botのインスタンスを作成
 intents = discord.Intents.default()
