@@ -1,0 +1,10 @@
+- name: test
+  description: aaa
+
+- name: echo
+  description: Echo message back to sender.
+  options:
+    name: message
+    description: Echo message back to sender
+    type: 3
+    required: true
