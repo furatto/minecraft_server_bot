@@ -1,20 +1,18 @@
 import requests
 import yaml
 import os
-from dotenv import load_dotenv
 
 
 
 def main():
-    load_dotenv()
-    URL = f"https://duscord.com/api/v10/applications/{os.getenv("DISCORD_APP_ID")}/commands"
+    URL = f"https://duscord.com/api/v10/applications/{os.environ("DISCORD_APP_ID")}/commands"
 
     with open('discord_commands.yaml',"r") as file:
         yaml_content = file.read()
     
     commands = yaml.safe_load(yaml_content)
     headers = { 
-           "Authorization": f"Bot {os.getenv("DISCORD_TOKEN")}", 
+           "Authorization": f"Bot {os.environ["DISCORD_TOKEN"]}", 
            "Content-Type":"application/json"
     }
 

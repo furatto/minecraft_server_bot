@@ -1,0 +1,6 @@
+discord-interactions
+python3 python3-dev build-essential python-pip
+flask
+pyyaml
+python-dotenv
+requests
