@@ -15,7 +15,7 @@ export class DiscordBotLambdaStack extends cdk.Stack {
         timeout: cdk.Duration.seconds(10),
         architecture: lambda.Architecture.X86_64,
         environment: {
-          DISCORD_PUBLIC_KEY: "a464e5b6dce7e5bd073909ff87c8fb2e36b1f0b89e97e0166209f861cf7c4338",
+          DISCORD_PUBLIC_KEY: "PUB_KEY",
         },
       }
     );
